@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dinila Navishan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand"><span class="brand-text">DN</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active"><span class="nav-num">01.</span> Home</a></li>
+      <li><a href="#about" class="nav-link"><span class="nav-num">02.</span> About</a></li>
+      <li><a href="#skills" class="nav-link"><span class="nav-num">03.</span> Skills</a></li>
+      <li><a href="#projects" class="nav-link"><span class="nav-num">04.</span> Projects</a></li>
+      <li><a href="#education" class="nav-link"><span class="nav-num">05.</span> Education</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="section home-section">
+    <div class="home-wrapper">
+      <div class="home-text">
+        <p class="greeting">Hello, World! 👋</p>
+        <h1 class="hero-title">I'm <span class="typed-name"></span><span class="cursor-blink">|</span></h1>
+        <div class="role-badges">
+          <span class="badge">💻 Software Engineer</span>
+          <span class="badge">📱 Mobile Developer</span>
+          <span class="badge">🌐 Web Developer</span>
+        </div>
+        <p class="hero-desc">
+          Passionate undergraduate crafting innovative digital experiences with clean code and creative solutions. Let's build something amazing together.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/DinilaNavee" target="_blank" class="soc-link"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/dinila-navishan-98a62b2a6/" target="_blank" class="soc-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" class="soc-link"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="home-image">
+        <div class="image-frame">
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <img src="My1.png" alt="Dinila Navishan" class="hero-img" />
+          <div class="glow-ring"></div>
+        </div>
+        <div class="tech-float t1"><i class="fab fa-html5"></i></div>
+        <div class="tech-float t2"><i class="fab fa-css3-alt"></i></div>
+        <div class="tech-float t3"><i class="fab fa-js-square"></i></div>
+        <div class="tech-float t4"><i class="fab fa-java"></i></div>
+        <div class="tech-float t5"><i class="fab fa-python"></i></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="section-header">
+      <p class="section-label">// WHO AM I</p>
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="about-wrapper">
+      <div class="about-image-col">
+        <div class="about-img-wrap">
+          <img src="My2.png" alt="About Dinila" class="about-img" />
+          <div class="about-img-border"></div>
+          <div class="about-badge-float"><i class="fas fa-code"></i><span>2+ Years<br>Experience</span></div>
+        </div>
+      </div>
+      <div class="about-content">
+        <h3 class="about-subtitle">Undergraduate Software Engineering Student</h3>
+        <p class="about-bio">
+          I am a passionate <strong>Computer Science student</strong> with a strong foundation in programming and a keen interest in
+          <span class="highlight">web</span> and <span class="highlight">mobile development</span>.
+          My journey in technology began with curiosity and has evolved into a commitment to creating innovative digital solutions.
+        </p>
+        <div class="about-stats">
+          <div class="stat-box"><span class="stat-number" data-target="10">0</span><span class="stat-label">Projects</span></div>
+          <div class="stat-box"><span class="stat-number" data-target="8">0</span><span class="stat-label">Technologies</span></div>
+          <div class="stat-box"><span class="stat-number" data-target="2">0</span><span class="stat-label">Years Exp.</span></div>
+        </div>
+        <div class="about-cards-grid">
+          <div class="a-card"><div class="a-card-icon"><i class="fas fa-code"></i></div><div><h4>Programming Excellence</h4><p>Proficient in multiple languages with focus on clean, efficient code.</p></div></div>
+          <div class="a-card"><div class="a-card-icon"><i class="fas fa-mobile-alt"></i></div><div><h4>Mobile Development</h4><p>Experience in Android development using Android Studio and Java.</p></div></div>
+          <div class="a-card"><div class="a-card-icon"><i class="fas fa-users"></i></div><div><h4>Team Collaboration</h4><p>Strong communication skills and collaborative environment experience.</p></div></div>
+          <div class="a-card"><div class="a-card-icon"><i class="fas fa-lightbulb"></i></div><div><h4>Problem Solving</h4><p>Creative approach to complex technical challenges and solutions.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills-section">
+    <div class="section-header">
+      <p class="section-label">// WHAT I KNOW</p>
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="skills-wrapper">
+      <div class="skills-col">
+        <h3 class="skills-col-title"><i class="fas fa-terminal"></i> Technical Skills</h3>
+        <div class="skill-item"><div class="skill-meta"><i class="fab fa-html5" style="color:#e34f26"></i> HTML <span>90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fab fa-css3-alt" style="color:#1572b6"></i> CSS <span>85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fab fa-js-square" style="color:#f7df1e"></i> JavaScript <span>75%</span></div><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fab fa-java" style="color:#007396"></i> Java <span>65%</span></div><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fab fa-php" style="color:#8892be"></i> PHP <span>70%</span></div><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fas fa-code" style="color:#00599c"></i> C++ <span>60%</span></div><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fas fa-code-branch" style="color:#9b4dca"></i> C# <span>55%</span></div><div class="skill-bar"><div class="skill-fill" data-width="55"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fab fa-python" style="color:#3776ab"></i> Python <span>60%</span></div><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+      </div>
+      <div class="skills-col">
+        <h3 class="skills-col-title"><i class="fas fa-tools"></i> Dev Tools</h3>
+        <div class="skill-item"><div class="skill-meta"><i class="fas fa-mobile-alt" style="color:#3ddc84"></i> Android Studio <span>80%</span></div><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fas fa-code" style="color:#007acc"></i> VSCode <span>90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fas fa-laptop-code" style="color:#ff6c37"></i> NetBeans <span>70%</span></div><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fab fa-git-alt" style="color:#f05032"></i> Git <span>85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+        <div class="skill-item"><div class="skill-meta"><i class="fab fa-figma" style="color:#f24e1e"></i> Figma <span>75%</span></div><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+        <h3 class="skills-col-title" style="margin-top:2rem"><i class="fas fa-star"></i> Soft Skills</h3>
+        <div class="soft-skills-grid">
+          <div class="soft-card">
+            <svg viewBox="0 0 36 36" class="soft-ring"><path class="soft-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/><path class="soft-fill" stroke-dasharray="90, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/></svg>
+            <span class="soft-pct">90%</span><p>Creativity</p>
+          </div>
+          <div class="soft-card">
+            <svg viewBox="0 0 36 36" class="soft-ring"><path class="soft-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/><path class="soft-fill" stroke-dasharray="85, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/></svg>
+            <span class="soft-pct">85%</span><p>Teamwork</p>
+          </div>
+          <div class="soft-card">
+            <svg viewBox="0 0 36 36" class="soft-ring"><path class="soft-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/><path class="soft-fill" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/></svg>
+            <span class="soft-pct">80%</span><p>Communication</p>
+          </div>
+          <div class="soft-card">
+            <svg viewBox="0 0 36 36" class="soft-ring"><path class="soft-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/><path class="soft-fill" stroke-dasharray="70, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/></svg>
+            <span class="soft-pct">70%</span><p>Problem Solving</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects-section">
+    <div class="section-header">
+      <p class="section-label">// WHAT I BUILT</p>
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="title-line"></div>
+      <p class="section-desc">Showcase of my academic journey and personal development projects demonstrating technical skills and problem-solving abilities.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="proj-card">
+        <div class="proj-card-top">
+          <div class="proj-icon"><i class="fas fa-hotel"></i></div>
+          <div class="proj-links"><a href="https://github.com/DinilaNavee/luxevista" target="_blank"><i class="fab fa-github"></i></a></div>
+        </div>
+        <div class="proj-tag">Mobile Development</div>
+        <h3 class="proj-title">LuxeVista Resort App</h3>
+        <p class="proj-subtitle">Hotel Operations Digitalization</p>
+        <p class="proj-desc">Built a full-featured Android application to streamline resort operations. Includes room booking, user authentication, service requests, and feedback mechanisms.</p>
+        <div class="proj-stack"><span>Java</span><span>Firebase</span><span>Android Studio</span></div>
+        <div class="proj-footer"><a href="https://github.com/DinilaNavee/luxevista" target="_blank" class="proj-btn"><i class="fab fa-github"></i> View Code</a></div>
+      </div>
+      <div class="proj-card featured">
+        <div class="featured-badge">⭐ Featured</div>
+        <div class="proj-card-top">
+          <div class="proj-icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="proj-links"><a href="https://github.com/DinilaNavee/Greenlife-wellness" target="_blank"><i class="fab fa-github"></i></a></div>
+        </div>
+        <div class="proj-tag">Web Development</div>
+        <h3 class="proj-title">GreenLife Wellness Center</h3>
+        <p class="proj-subtitle">Health Center Management System</p>
+        <p class="proj-desc">Developed a responsive full-stack wellness management system supporting patient registration, doctor appointments, feedback, and admin control panel.</p>
+        <div class="proj-stack"><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>HTML/CSS</span></div>
+        <div class="proj-footer"><a href="https://github.com/DinilaNavee/Greenlife-wellness" target="_blank" class="proj-btn"><i class="fab fa-github"></i> View Code</a></div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-card-top">
+          <div class="proj-icon"><i class="fas fa-shopping-cart"></i></div>
+          <div class="proj-links"><a href="https://github.com/DinilaNavee/GadegtHub" target="_blank"><i class="fab fa-github"></i></a></div>
+        </div>
+        <div class="proj-tag">Web Development</div>
+        <h3 class="proj-title">Gadget Hub</h3>
+        <p class="proj-subtitle">E-Commerce Platform</p>
+        <p class="proj-desc">Developed a responsive full-stack e-commerce website with product management, cart, checkout, and RESTful API integration.</p>
+        <div class="proj-stack"><span>C#</span><span>MySQL</span><span>.NET</span><span>API</span><span>HTML/CSS</span></div>
+        <div class="proj-footer"><a href="https://github.com/DinilaNavee/GadegtHub" target="_blank" class="proj-btn"><i class="fab fa-github"></i> View Code</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education-section">
+    <div class="section-header">
+      <p class="section-label">// MY JOURNEY</p>
+      <h2 class="section-title">My <span>Education</span></h2>
+      <div class="title-line"></div>
+      <p class="section-desc">My academic journey building a strong foundation for innovation and growth.</p>
+    </div>
+    <div class="edu-timeline">
+      <div class="edu-item left">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-card-header"><img src="icbt.png" alt="ICBT" class="edu-logo"/><div class="edu-info"><h3>Higher Diploma in Computing and Software Engineering</h3><p><i class="fas fa-university"></i> ICBT Campus – Cardiff Metropolitan University</p><p><i class="fas fa-calendar-alt"></i> Graduation: 2026 &nbsp;<i class="fas fa-map-marker-alt"></i> Sri Lanka</p></div></div>
+          <p class="edu-desc">Advanced studies in software engineering principles, computer systems, and modern development practices.</p>
+          <div class="edu-tags"><span>Software Engineering</span><span>System Design</span><span>OOP</span><span>SDLC</span><span>Project Management</span></div>
+        </div>
+      </div>
+      <div class="edu-item right">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-card-header"><img src="esoft.png" alt="ESOFT" class="edu-logo"/><div class="edu-info"><h3>Level 3 Diploma in Information Technology</h3><p><i class="fas fa-university"></i> ESOFT Metro Campus</p><p><i class="fas fa-map-marker-alt"></i> Nugegoda, Sri Lanka</p></div></div>
+          <p class="edu-desc">Focused on IT fundamentals, programming, databases, and basic project implementation.</p>
+          <div class="edu-tags"><span>Programming Fundamentals</span><span>Web Development</span><span>Database (SQL)</span><span>IT Projects</span></div>
+        </div>
+      </div>
+      <div class="edu-item left">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-card-header"><img src="esoft.png" alt="ESOFT" class="edu-logo"/><div class="edu-info"><h3>Diploma in English Language</h3><p><i class="fas fa-university"></i> ESOFT Metro Campus</p><p><i class="fas fa-map-marker-alt"></i> Nugegoda, Sri Lanka</p></div></div>
+          <p class="edu-desc">Enhanced English communication skills with emphasis on speaking, grammar, and professional writing.</p>
+          <div class="edu-tags"><span>Speaking Skills</span><span>Advanced Grammar</span><span>Professional Writing</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed &amp; Built by <span>Dinila Navishan</span> &copy; 2026</p>
+    <p class="footer-sub">Made with <i class="fas fa-heart" style="color:#a855f7"></i> &amp; lots of coffee</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
